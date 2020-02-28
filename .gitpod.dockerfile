@@ -1,7 +1,9 @@
 FROM nks0nez/workshop:first
-
-RUN sudo /juice-shop/burp/run.sh &
 USER ROOT
+RUN /juice-shop/burp/run.sh 
+USER ROOT
+# link stuff here
+# fix permissions
 # optional: use a custom apache config.
 # COPY apache.conf /etc/apache2/apache2.conf
 
