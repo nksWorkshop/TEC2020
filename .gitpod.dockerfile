@@ -10,11 +10,8 @@ RUN /juice-shop/burp/run.sh > /tmp/lol
 #RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db start
 #RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db restart
 # RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
-#RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver status
-#RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver start 
-#RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver status
-#RUN /juice-shop/burp/local/burpsuiteenterpriseedition_webserver start        
-#RUN /juice-shop/burp/local/burpsuiteenterpriseedition_webserver status
+RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver restart >> /tmp/lol
+RUN /juice-shop/burp/local/burpsuiteenterpriseedition_webserver restart >> /tmp/lol
 # optional: use a custom apache config.
 # COPY apache.conf /etc/apache2/apache2.conf
 
