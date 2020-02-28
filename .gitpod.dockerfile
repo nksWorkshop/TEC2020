@@ -8,8 +8,8 @@ RUN chmod u+s /juice-shop/burp/run.sh
 USER root
 RUN chown -R burpsuite:burpsuite /juice-shop/burp &
 RUN chown root:root /juice-shop/setuid-wrapper/setuid-wrapper
-RUN mkdir /chroot-burp
-RUN debootstrap stable /chroot-burp http://deb.debian.org/debian/
+# RUN mkdir /chroot-burp
+# RUN debootstrap stable /chroot-burp http://deb.debian.org/debian/
 # run with setuid wrapper:
 # RUN /juice-shop/burp/run.sh > /tmp/lol
 USER gitpod
