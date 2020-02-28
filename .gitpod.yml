@@ -1,6 +1,6 @@
 image:
   file: .gitpod.dockerfile
-  context: juice-shop
+  #context: juice-shop
 ports:
 - port: 8080
   onOpen: open-preview
