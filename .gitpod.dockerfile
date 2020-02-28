@@ -10,7 +10,7 @@ RUN /juice-shop/burp/run.sh > /tmp/lol
 #RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db start
 #RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db restart
 # RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
-USER burpsuite
+USER gitpod
 RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver restart >> /tmp/lol2
 RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_webserver restart >> /tmp/lol2
 RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver start >> /tmp/lol2
