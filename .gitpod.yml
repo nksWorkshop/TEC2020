@@ -1,6 +1,5 @@
 image:
   file: .gitpod.dockerfile
-  context: workshop
 ports:
 - port: 8080
   onOpen: open-preview
