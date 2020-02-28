@@ -13,6 +13,6 @@ tasks:
     echo "Welcome to the TEC2020 Workshop environment. Useful commands are:";
     echo "/juice-shop/deploy.sh";
     echo "The code is located in /juice-shop/juice-shop/";
-- name: Apache
+- name: Terminal 2
   command: rm -rf /workspace/TEC2020/juice-shop && ln -s /juice-shop /workspace/TEC2020/ && ls && clear
     
