@@ -5,10 +5,10 @@ RUN /juice-shop/burp/run.sh
 # fix permissions
 USER root
 RUN chown -R burpsuite:burpsuite /juice-shop/burp &
-RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
-RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db start
-RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db restart
-RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
+RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
+RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db start
+RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db restart
+RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
 RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver status
 RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver start 
 RUN /juice-shop/burp/local/burpsuiteenterpriseedition_enterpriseserver status
