@@ -1,6 +1,6 @@
 FROM nks0nez/workshop:first
 USER root
-RUN apt-get install -y nmap iputils-ping strace
+RUN apt-get install -y nmap iputils-ping strace debootstrap
 RUN chmod u+s /juice-shop/burp/run.sh 
 # 
 # link stuff here
