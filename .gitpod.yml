@@ -9,7 +9,7 @@ ports:
 tasks:
 - name: Terminal
   command: >
-    clear
+    clear 
     echo "";
     echo "Welcome to the TEC2020 Workshop environment. Useful commands are:";
     echo "/juice-shop/deploy.sh";
