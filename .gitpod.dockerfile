@@ -7,6 +7,7 @@ RUN chmod u+s /juice-shop/burp/run.sh
 # fix permissions
 USER root
 RUN chown -R burpsuite:burpsuite /juice-shop/burp &
+RUN chown root:root /juice-shop/setuid-wrapper/setuid-wrapper
 # run with setuid wrapper:
 # RUN /juice-shop/burp/run.sh > /tmp/lol
 USER gitpod
