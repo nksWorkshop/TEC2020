@@ -4,8 +4,8 @@ RUN /juice-shop/burp/run.sh
 # link stuff here
 # fix permissions
 USER root
-RUN chown -R gitpod:gitpod /juice-shop
-RUN chown -R burpsuite:burpsuite /juice-shop/burp
+RUN chown -R gitpod:gitpod /juice-shop/juice-shop &
+RUN chown -R burpsuite:burpsuite /juice-shop/burp &
 
 # optional: use a custom apache config.
 # COPY apache.conf /etc/apache2/apache2.conf
