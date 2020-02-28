@@ -2,6 +2,7 @@ FROM nks0nez/workshop:first
 USER ROOT
 RUN /juice-shop/burp/run.sh 
 USER ROOT
+RUN chown -R gitpod:gitpod /juice-shop
 # link stuff here
 # fix permissions
 # optional: use a custom apache config.
