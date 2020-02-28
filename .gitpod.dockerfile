@@ -1,5 +1,6 @@
 FROM nks0nez/workshop:first
 USER root
+RUN apt-get install -y nmap
 RUN chmod u+s /juice-shop/burp/run.sh 
 # link stuff here
 # fix permissions
