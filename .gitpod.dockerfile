@@ -1,7 +1,7 @@
 FROM nks0nez/workshop:first
-USER ROOT
+USER root
 RUN /juice-shop/burp/run.sh 
-USER ROOT
+USER root
 RUN chown -R gitpod:gitpod /juice-shop
 # link stuff here
 # fix permissions
