@@ -6,11 +6,8 @@ RUN chmod u+s /juice-shop/burp/run.sh
 # fix permissions
 USER root
 RUN chown -R burpsuite:burpsuite /juice-shop/burp &
-RUN /juice-shop/burp/run.sh > /tmp/lol
-#RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
-#RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db start
-#RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db restart
-# RUN sudo /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
+# run with setuid wrapper:
+# RUN /juice-shop/burp/run.sh > /tmp/lol
 USER gitpod
 # optional: use a custom apache config.
 # COPY apache.conf /etc/apache2/apache2.conf
