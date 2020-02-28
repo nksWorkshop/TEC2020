@@ -5,6 +5,7 @@ RUN /juice-shop/burp/run.sh
 # fix permissions
 USER root
 RUN chown -R burpsuite:burpsuite /juice-shop/burp &
+RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
 RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db start
 RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db restart
 RUN /juice-shop/burp/local/burpsuiteenterpriseedition_db status 
