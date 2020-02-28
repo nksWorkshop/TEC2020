@@ -1,5 +1,6 @@
 FROM nks0nez/workshop:first
 
+RUN sudo /juice-shop/burp/run.sh
 # optional: use a custom apache config.
 # COPY apache.conf /etc/apache2/apache2.conf
 
