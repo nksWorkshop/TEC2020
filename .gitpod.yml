@@ -14,5 +14,5 @@ tasks:
     echo "/juice-shop/deploy.sh";
     echo "The code is located in /juice-shop/juice-shop/";
 - name: Apache
-  command: rm -rf /workspace/TEC2020/juice-shop && ln -s /juice-shop /workspace/TEC2020/ && ls
+  command: rm -rf /workspace/TEC2020/juice-shop && ln -s /juice-shop /workspace/TEC2020/ && ls && clear
     
