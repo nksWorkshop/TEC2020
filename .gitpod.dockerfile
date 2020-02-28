@@ -1,4 +1,4 @@
-FROM nks0nez/workshop:latest
+FROM nks0nez/workshop:first
 
 # optional: use a custom apache config.
 # COPY apache.conf /etc/apache2/apache2.conf
